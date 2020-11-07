@@ -1,0 +1,562 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 共通のスタイル */
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 0;
+  text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+/* headerのcss */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.header-logo {
+  font-size: 22px;
+  margin-left: 45px;
+  font-weight: bold;
+  line-height: 70px;
+}
+nav ul {
+  display: flex;
+  line-height: 70px;
+}
+.list li {
+  margin-right: 18px;
+}
+.list a {
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* visualのcss */
+.visual {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../imgg/eyecatch.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+.visual-title {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 150px;
+  line-height: 400px;
+}
+.banner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+.banner-left {
+  background-color: #fff;
+  color: #000;
+  width: 550px;
+  height: auto;
+}
+.banner-right {
+  background-color: #000;
+  padding: 14px 40px;
+}
+.banner-left h2 {
+  text-align: left;
+}
+.banner-left p {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.banner-right h3 {
+  vertical-align: middle;
+}
+/* missionのcss */
+
+.mission {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  position: relative;
+}
+.mission-img img {
+  width: 400px;
+  height: 230px;
+  object-fit: cover;
+  position: absolute;
+  right: 120px;
+  top: 110px;
+}
+.content {
+  color: #fff;
+  position: absolute;
+  left: 280px;
+  top: 120px;
+  width: 600px;
+}
+.content h2 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+.content p {
+  font-size: 10px;
+  margin-bottom: 22px;
+  line-height: 16px;
+}
+.content a {
+  font-size: 11px;
+  background-color: white;
+  color: #778899;
+  padding: 6px 23px;
+  text-decoration: none;
+}
+.content a:hover {
+  background-color: #778899;
+  color: white;
+  transition: 0.4s;
+}
+
+.blank {
+  background-color: white;
+  width: 1000px;
+  height: 100px;
+}
+/* serviceのcss */
+.service {
+  width: 100%;
+  height: 1000px;
+  background-color: #d3d3d3;
+  position: relative;
+}
+.service h1 {
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.service-title {
+  font-size: 25px;
+  padding-top: 20px;
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+.service-card1,
+.service-card2 {
+  background-color: white;
+  width: 20%;
+  height: 250px;
+  padding: 0 50px;
+}
+.service-img1,
+.service-img2 {
+  width: 35%;
+  height: 400px;
+}
+.service-img1 {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: 10;
+}
+.service-img2 {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  z-index: 10;
+}
+.service-card1 {
+  position: absolute;
+  top: 140px;
+  left: 750px;
+  z-index: 20;
+}
+.service-card2 {
+  position: absolute;
+  bottom: 140px;
+  right: 750px;
+  z-index: 20;
+}
+.contents {
+  margin-top: 60px;
+}
+.contents h2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #00bfff;
+}
+.contents p {
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.contents a {
+  font-size: 12px;
+  border: 0.5px solid #c0c0c0;
+  text-decoration: none;
+  padding: 6px 23px;
+  color: black;
+  display: block;
+  float: right;
+}
+.contents a:hover {
+  background-color: #778899;
+  color: white;
+  transition: 0.4s;
+}
+/* infoのcss */
+.info {
+  width: 100%;
+  height: 350px;
+  color: white;
+  position: relative;
+}
+.company {
+  background-image: url(../../imgg/company.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  height: 100px;
+  position: relative;
+}
+.recruit {
+  background-image: url(../../imgg/recruit.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 45%;
+  height: 100px;
+}
+.faq {
+  background-color: black;
+  width: 70%;
+  height: 60px;
+  margin: 0 auto;
+}
+.info-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  margin-bottom: 90px;
+}
+/* marjin以外の方法見当たらない */
+.company h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 7px;
+}
+.company p {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+.recruit h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 32px;
+  margin-bottom: 7px;
+}
+.recruit p {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+.faq {
+  position: relative;
+  display: flex;
+}
+.faq h4 {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+.faq p {
+  display: block;
+  margin: 0 auto;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+/* contactのcss */
+.contact {
+  width: 100%;
+  height: 400px;
+  background-image: url(../../imgg/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.contact a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  border: 1px solid white;
+  padding: 6px 23px;
+}
+.contact h5 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.contact h6 {
+  font-size: 21px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
+.contact p {
+  font-size: 10px;
+  margin-bottom: 35px;
+}
+.contact h7 {
+  font-size: 12px;
+  font-weight: bold;
+}
+.contactarea {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact a:hover {
+  background-color: #778899;
+  color: white;
+  transition: 0.4s;
+}
+
+/* footerのcss */
+footer {
+  width: 100%;
+  height: 90px;
+  color: white;
+  background-color: black;
+}
+.footer-class {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-logo {
+  margin-top: 28px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.footer-class nav {
+  display: inline-block;
+}
+.footer-list a {
+  color: white;
+  margin-right: 18px;
+  text-decoration: none;
+  font-size: 13px;
+}
+footer h2 {
+  text-align: center;
+  font-size: 12px;
+}
